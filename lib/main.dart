@@ -111,6 +111,7 @@ class WelcomePage extends StatelessWidget {
             flex: 2,
             child: Column(
               children: [
+                Spacer(),
                 Text(
                   'Let\'s Begin Your',
                   style: TextStyle(
@@ -140,10 +141,21 @@ class WelcomePage extends StatelessWidget {
                     ),
                   ),
                 ),
+                Spacer(),
                 TextButton.icon(
                   onPressed: () {},
-                  icon: Icon(Icons.arrow_back),
-                  label: Text('back'),
+                  icon: Icon(
+                    Icons.arrow_back,
+                    color: Colors.black,
+                    size: 24,
+                  ),
+                  label: Text(
+                    'back',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 24,
+                    ),
+                  ),
                 ),
               ],
             ),
