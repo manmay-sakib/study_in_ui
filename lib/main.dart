@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:study_in_ui/sign_up_screen.dart';
 import 'package:study_in_ui/welcome_screen.dart';
 
 void main() {

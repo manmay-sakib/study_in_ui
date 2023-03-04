@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:study_in_ui/sign_up_screen.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({Key? key}) : super(key: key);
@@ -92,7 +93,13 @@ class WelcomePage extends StatelessWidget {
                 ),
                 SizedBox(height: 16),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) {
+                        return SignUpScreen();
+                      }),
+                    );
+                  },
                   child: Text(
                     "Journey",
                     style: TextStyle(
